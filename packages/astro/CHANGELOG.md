@@ -1,5 +1,13 @@
 # astro
 
+## 0.23.0-next.2
+
+### Patch Changes
+
+- [#2532](https://github.com/withastro/astro/pull/2532) [`b210fd00`](https://github.com/withastro/astro/commit/b210fd008b9253f0c755c21e157cd7fb069c8445) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of .astro modules in astro@next
+
+* [#2531](https://github.com/withastro/astro/pull/2531) [`ef1d81ef`](https://github.com/withastro/astro/commit/ef1d81effd4e0c420c6eb2e5e500cfaac3106ea8) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue where hostname was not passed to dev server
+
 ## 0.23.0-next.1
 
 ### Patch Changes
@@ -1241,10 +1249,10 @@ For convenience, you may now also move your `astro.config.js` file to a top-leve
 
   ```js
   export default {
-    markdownOptions: {
-      remarkPlugins: ['remark-slug', ['remark-autolink-headings', { behavior: 'prepend' }]],
-      rehypePlugins: ['rehype-slug', ['rehype-autolink-headings', { behavior: 'prepend' }]],
-    },
+  	markdownOptions: {
+  		remarkPlugins: ['remark-slug', ['remark-autolink-headings', { behavior: 'prepend' }]],
+  		rehypePlugins: ['rehype-slug', ['rehype-autolink-headings', { behavior: 'prepend' }]],
+  	},
   };
   ```
 
@@ -1264,10 +1272,10 @@ For convenience, you may now also move your `astro.config.js` file to a top-leve
 
   ```js
   export default {
-    name: '@matthewp/my-renderer',
-    server: './server.js',
-    client: './client.js',
-    hydrationPolyfills: ['./my-polyfill.js'],
+  	name: '@matthewp/my-renderer',
+  	server: './server.js',
+  	client: './client.js',
+  	hydrationPolyfills: ['./my-polyfill.js'],
   };
   ```
 
